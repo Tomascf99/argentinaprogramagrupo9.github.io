@@ -1,0 +1,30 @@
+.persona__imagen {
+    background: red;
+    height: 300px;
+    width: 300px;
+}
+
+.persona__imagen--luciano {
+    background: url("../../img/1658932392884.jfif");
+}
+
+.persona__imagen--tomas {
+    background: url("../../img/foto1.png");
+}
+
+.persona__imagen--facundo {
+    background: url("../../img/facuS.jpg");
+}
+.persona__imagen--andrea {
+    background: url("../../img/malamboo.jpg");
+}
+
+
+.persona__imagen {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+}

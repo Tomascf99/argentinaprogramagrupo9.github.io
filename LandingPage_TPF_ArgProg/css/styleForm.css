@@ -1,0 +1,119 @@
+/* Estilo del formulario*/
+form {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 40px;
+    padding-right: 55px;
+    border: 3px solid rgb(101, 107, 187);
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    animation: slide-up 0.5s ease-out;
+
+}
+
+label {
+    display: block;
+    color: black;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input,
+select, textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(101, 107, 187);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #fafafa;
+    color: #000000;
+    border: 2px solid rgb(101, 107, 187);
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+    margin-left: 20%;
+    margin-top: 8%;
+    width: 60%;
+}
+
+#titulo {
+    padding-bottom: 40px;
+    color: black;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+input[type="submit"]:hover {
+    background-color: #6c7ee4;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* Estilo del resultado del formulario*/
+#res {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 40px;
+    border: 3px solid rgb(101, 107, 187);
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    animation: slide-up 0.5s ease-out;
+}
+
+#res p {
+    width: 100%;
+    color: black;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: 400;
+}
+
+#a {
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+#b {
+    font-size: 20px;
+    padding-top: 10px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#res button {
+    background-color: #fafafa;
+    color: #000000;
+    border: 2px solid rgb(101, 107, 187);
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+    margin-top: 8%;
+    width: 60%;
+}
+
+#res button:hover {
+    background-color: #6c7ee4;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work with us | Dev Dreamer</title>
+    <!-- Links a todos los estilos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/head.css" rel="stylesheet">
+    <link href="css/llamada.css" rel="stylesheet">
+    <link href="css/bases.css" rel="stylesheet">
+    <link href="css/destacados.css" rel="stylesheet">
+    <link href="css/diferenciales.css" rel="stylesheet">
+    <link href="css/sobre-nosotros.css" rel="stylesheet">
+    <link href="css/planes.css" rel="stylesheet">
+    <link href="css/contacto.css" rel="stylesheet">
+    <link href="css/institucional.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/quienesSomos/quienesSomos.css" rel="stylesheet" />
+    <link href="css/quienesSomos/quienesSomos-titulo.css" rel="stylesheet" />
+    <link href="css/quienesSomos/quienesSomos-descripcion.css" rel="stylesheet" />
+    <link href="css/personas.css" rel="stylesheet" />
+    <link href="css/personas/persona-nombre.css" rel="stylesheet" />
+    <link href="css/personas/persona-imagen.css" rel="stylesheet" />
+    <link href="css/personas/persona-funcion.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/personas.css" />
+    <link rel="stylesheet" href="css/styleForm.css">
+    <!-- Script para exportar a PDF -->
+    <script src="js/jspdf.min.js"></script>
+    <!-- Script para validar campos -->
+    <script src="js/validate.min.js"></script>
+    <script src="Js/index.js"></script>
+</head>
+
+<body>
+
+
+    <body>
+        <header class="head container">
+
+            <img class="head__logo" src="img/Logo.png" alt="Logo de Dev Dreamer">
+            <nav class="head__navegacion">
+                <ul>
+                    <li class="head__enlace button"><a href="index.html#head">Inicio</a></li>
+                    <li class="head__enlace button"><a href="index.html#destacados">Destacados</a></li>
+                    <li class="head__enlace button"><a href="index.html#sobre">Sobre</a></li>
+                    <li class="head__enlace button"><a href="index.html#quienesSomos">Quienes Somos</a></li>
+                    <li class="head__enlace button"><a href="index.html#planes">Planes</a></li>
+                    <li class="head__enlace button"><a href="index.html#contacto">Contacto</a></li>
+                    <li class="head__enlace button"><a href="index.html#institucional">Institucional</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="llamada container">
+                <h1 class="llamada__titulo">Muy pronto trabajaremos juntos!</h1>
+                <!-- Formulario de contacto-->
+                <form id="form" action="#" method="post" novalidate>
+                    <p id="titulo">Contactenos</p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                    <p>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido"placeholder="Ingrese su apellido">
+                    <p>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email"placeholder="Ingrese su correo electronico">
+                    <p>
+                        <label for="telefono">Número de celular:</label>
+                        <input type="tel" id="telefono" name="telefono"placeholder="Ingrese su numero de telefono">
+                    <p>
+                    <div class="form-group">
+                        <label for="plan">Seleccione un plan:</label>
+                        <select id="plan" name="plan">
+                            <option value="">Seleccionar</option>
+                            <option value="Start">Start</option>
+                            <option value="Mega">Mega</option>
+                            <option value="Ultra">Ultra</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Enviar" id="botonEnviar">
+                </form>
+
+                <!-- Datos del formulario ocultos hasta presionar el boton -->
+                <div id="res" style="display: none;">
+                    <p id="a">Muchas gracias por elegirnos!</p>
+                    <p>Nombre: <span id="nombreMostrado"></span></p>
+                    <p>Apellido: <span id="apellidoMostrado"></span></p>
+                    <p>Email: <span id="emailMostrado"></span></p>
+                    <p>Teléfono: <span id="telefonoMostrado"></span></p>
+                    <p>Plan seleccionado: <span id="planMostrado"></span></p>
+                    <p id="b">En breve nos pondremos en contacto</span></p>
+                    <button onclick="generarPDF()">Generar PDF</button>
+                </div>
+                <!-- Script del formulario -->
+                <script src="js/form.js"></script>
+
+                </div>
+            </section>
+
+
+            <footer class="footer container">
+                <img src="img/Logo.png" alt="Logo de Apeperia" class="footer__logo">
+                <ul class="footer__social">
+                    <li><a href="#" class="footer__midia"><img src="img/facebook.png" alt="Ícono de Facebook"></a></li>
+                    <li><a href="#" class="footer__midia"><img src="img/instagram.png" alt="Ícono de Instagram"></a>
+                    </li>
+                    <li><a href="#" class="footer__midia"><img src="img/twitter.png" alt="Ícono de Twitter"></a></li>
+                </ul>
+                <nav>
+                    <ul class="footer__navegacion">
+                        <li class="footer__enlace"><a href="#">Sobre</a></li>
+                        <li class="footer__enlace"><a href="#">Planes</a></li>
+                        <li class="footer__enlace"><a href="#">Blog</a></li>
+                        <li class="footer__enlace"><a href="#">Destacados</a></li>
+                        <li class="footer__enlace"><a href="#">Institucional</a></li>
+                        <li class="footer__enlace"><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </main>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+.quienes-somos__titulo {
+    color: #8d0606;
+    font-family: var(--montserrat);
+    font-size: 3.1875rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: var(--fuente-ceniza-oscuro);
+}

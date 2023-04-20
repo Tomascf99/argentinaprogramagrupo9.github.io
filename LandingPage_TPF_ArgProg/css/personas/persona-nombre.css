@@ -1,0 +1,6 @@
+.persona__nombre {
+    color: var(--fuente-ceniza-oscuro);
+    font-family: var(--montserrat);
+    font-size: 2rem;
+    margin: 1rem 0;
+}

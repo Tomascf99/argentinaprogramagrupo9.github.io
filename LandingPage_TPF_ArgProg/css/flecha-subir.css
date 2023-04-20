@@ -1,0 +1,22 @@
+.flecha-subir{
+    width: 50px;
+    height: 50px;
+    background-color: var(--background-llamada-mobile);
+    border: 2px solid var(--background-azul-claro);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50px;
+    z-index: 100;
+}
+
+.flecha-subir a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    color: var(--background-azul-claro);
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+}

@@ -1,0 +1,62 @@
+.head {
+    color: var(--background-blanco);
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+
+    border-bottom: 1px solid var(--border-cabecera-mobile);
+
+    position: absolute;
+}
+
+
+.head__logo {
+    margin-bottom: 1rem;
+}
+
+.head__navegacion {
+    text-align: center;
+}
+
+.head__enlace {
+    font-size: 1.1rem;
+
+    display: inline-block;
+    text-decoration: none;
+    margin-right: .7rem;
+    margin-bottom: .7rem;
+    margin-left: .7rem;
+
+    text-decoration: none;
+
+    /* Set up the hover */
+    /* If you aren't using autoprefix, remember to prefix the gradient for other browsers */
+    background-image: linear-gradient(white, white);
+    background-size: 0 2px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .2s ease-out;
+}
+
+.head__enlace:hover {
+    /* The following line makes the underline only as wide as the text */
+    /* background-size: calc(100% - 2em) 5px, auto; */
+    background-size: 100% 2px, auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .head {
+        flex-direction: row;
+        justify-content: space-between;
+        border: none;
+    }
+}
